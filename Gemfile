@@ -70,3 +70,5 @@ gem "jquery-rails"
 gem 'active_hash', '~> 1.5.3'
 gem 'ancestry'
 gem "haml-rails", "~> 2.0"
+gem "chartkick"
+gem 'chartable'
