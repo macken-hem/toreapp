@@ -1,17 +1,21 @@
 .wrapper{
   box-sizing: border-box;
 
-  .header{
-    width: 100vw;
-    height: 80px;
-
-  }
-
-  .data{
-    background-color: burlywood;
+  .index{
     width: 100vw;
     height: 100vh;
-  }
+
+    .header{
+      height: 10%;
+
+    }
+
+    .main{
+      background-color: burlywood;
+      height: 90%;
+    }
+
+}
   .content{
     background-color: navajowhite;
     width: 100vw;
