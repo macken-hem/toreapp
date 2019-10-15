@@ -1,0 +1,29 @@
+.wrapper
+  .index
+    .header
+      .header_content
+        .header_content-left
+          %i.fas.fa-dumbbell.fa-3x
+        .header_content-middle
+          %h3 title
+        .header_content-right
+          .new_user
+          = link_to '新規登録', new_user_registration_path, method: :get
+          .log_in
+          = link_to 'ログイン', new_user_session_path, method: :get
+    %div
+      %div
+        #{@mypage.day}
+        
+      %div
+      = pie_chart @morning
+      %div
+      = pie_chart @blunch
+      %div
+      = pie_chart @lunch
+      %div
+      = pie_chart @after_noon
+      %div
+      = pie_chart @dinner
+      %div
+      = pie_chart @late

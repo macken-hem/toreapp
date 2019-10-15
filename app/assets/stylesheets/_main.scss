@@ -8,11 +8,65 @@
     .header{
       height: 10%;
 
+      .header_content{
+        display: flex;
+        justify-content: space-between;
+        
+        .header_content-left{
+
+          .fas.fa-dumbbell.fa-3x{
+            color: aqua;
+            
+          }
+
+        }
+          
+        .header_content-middle{
+
+        }
+          
+        .header_content-right{
+          display: flex;
+
+        }
+
+      }
+
     }
 
     .main{
       background-color: burlywood;
       height: 90%;
+
+      .main_content{
+        height: 100%;
+        width: 100%;
+
+        .main_content_upper{
+          margin: 0 auto;
+          height: 20%;
+          width: 80%;
+          background-color: chocolate;
+          
+
+        }
+        .main_content_middle{
+          margin: 0 auto;
+          height: 60%;
+          width: 80%;
+          background-color:bisque;
+
+        }
+        .main_content_bottom{
+          margin: 0 auto;
+          height: 20%;
+          width: 80%;
+          background-color: olivedrab;
+
+        }
+
+      }
+
     }
 
 }
@@ -20,6 +74,12 @@
     background-color: navajowhite;
     width: 100vw;
     height: 100vh;
+  }
+
+
+  .footer{
+
+
   }
 
 

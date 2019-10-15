@@ -1,0 +1,70 @@
+.wrapper
+  .index
+    .header
+      .header_content
+        .header_content-left
+          %i.fas.fa-dumbbell.fa-3x
+        .header_content-middle
+          %h3 title
+        .header_content-right
+          .new_user
+          = link_to '新規登録', new_user_registration_path, method: :get
+          .log_in
+          = link_to 'ログイン', new_user_session_path, method: :get
+    .form
+    = form_for(@mypage, url:'/mypage', metho: :create) do |f|
+      %div
+      -# = f.select :month, [[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12]],{prompt: "---"}
+      = f.date_field :day
+      -# = f.select :day, [[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13],[14,14],[15,15],[16,16],[17,17],[18,18],[19,19],[20,20],[21,21],[22,22],[23,23],[24,24],[25,25],[26,26],[27,27],[28,28],[29,29],[30,30],[31,31]],{prompt: "---"}
+      -# = f.select :day_week, [["日曜日","日曜日"],["月曜日","月曜日"],["火曜日","火曜日"],["水曜日","水曜日"],["木曜日","木曜日"],["金曜日","金曜日"],["土曜日","土曜日"]],{prompt: "---"}
+      -# = f.select :condition, [["絶好調","絶好調"],["好調","好調"],["まあまあ良い","まあまあ良い"],["普通","普通"],["まあまあ悪い","まあまあ悪い"],["不調","不調"],["絶不調","絶不調"]],{prompt: "---"}
+      -# = f.number_field :body_t, min: 36.0 ,max: 40, step: 0.1
+      -# = f.number_field :sleep, min: 60 ,max: 600, step: 30
+
+      %div
+      = f.file_field :image
+      = f.number_field :weight, min: 0 , max:100
+      %br
+      = f.text_area :morning_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :morning_p, min: 0 , max:100
+      = f.number_field :morning_f, min: 0 , max:100
+      = f.number_field :morning_c, min: 0 , max:300
+      = f.number_field :morning_cal, min: 0 , max:3000, step:10
+      
+      = f.text_area :blunch_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :blunch_p, min: 0 , max:100
+      = f.number_field :blunch_f, min: 0 , max:100
+      = f.number_field :blunch_c, min: 0 , max:300
+      = f.number_field :blunch_cal, min: 0 , max:3000, step:10
+
+      = f.text_area :lunch_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :lunch_p, min: 0 , max:100
+      = f.number_field :lunch_f, min: 0 , max:100
+      = f.number_field :lunch_c, min: 0 , max:300
+      = f.number_field :lunch_cal, min: 0 , max:3000, step:10
+
+      = f.text_area :after_noon_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :after_noon_p, min: 0 , max:100
+      = f.number_field :after_noon_f, min: 0 , max:100
+      = f.number_field :after_noon_c, min: 0 , max:300
+      = f.number_field :after_noon_cal, min: 0 , max:3000, step:10
+
+      
+      = f.text_area :dinner_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :dinner_p, min: 0 , max:100
+      = f.number_field :dinner_f, min: 0 , max:100
+      = f.number_field :dinner_c, min: 0 , max:300
+      = f.number_field :dinner_cal, min: 0 , max:3000, step:10
+
+           
+      = f.text_area :late_menu, placeholder: "食べたものを書こう", rows: "5"
+      = f.number_field :late_p, min: 0 , max:100
+      = f.number_field :late_f, min: 0 , max:100
+      = f.number_field :late_c, min: 0 , max:300
+      = f.number_field :late_cal, min: 0 , max:3000, step:10
+
+
+      %div
+      = f.submit :登録する
+

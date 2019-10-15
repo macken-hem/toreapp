@@ -1,0 +1,60 @@
+.form
+= form_for(@training, url:'/mypage/mypage_id/training',method: :post ) do |f|
+  %div
+    = f.file_field :image
+    = f.text_field :part, class: "input-default", placeholder: "胸、脚など"
+  %div
+    = f.text_field :name1,class: "input-default", placeholder: "メニュー名を記入"
+    = f.number_field :set1,class: "input-default"
+    = f.text_field :hosoku1,class: "input-default", placeholder: "補足"
+  %div
+    = f.text_field :name2,class: "input-default", placeholder: "メニュー名を記入"
+    = f.number_field :set2,class: "input-default"
+    = f.text_field :hosoku2,class: "input-default", placeholder: "補足"
+  %div
+    = f.text_field :name3,class: "input-default", placeholder: "メニュー名を記入"
+    = f.number_field :set3,class: "input-default"
+    = f.text_field :hosoku3,class: "input-default", placeholder: "補足"
+  %div
+    = f.text_field :name4,class: "input-default", placeholder: "メニュー名を記入"
+    = f.number_field :set4,class: "input-default"
+    = f.text_field :hosoku4,class: "input-default", placeholder: "補足"
+  %div
+    = f.text_field :name5,class: "input-default", placeholder: "メニュー名を記入"
+    = f.number_field :set5,class: "input-default"
+    = f.text_field :hosoku5,class: "input-default", placeholder: "補足"
+  %div
+    = f.text_area :description,placeholder: "詳細を記入"
+    -# = f.hidden_field :mypage_id, value:(params[:mypage_id])
+  %div
+    = f.submit :登録する
+.form
+    = form_for(@training, url:'/mypage/mypage_id/training',method: :post ) do |f|
+      %div
+        = f.file_field :image
+        = f.text_field :part, class: "input-default", placeholder: "胸、脚など"
+      %div
+        = f.text_field :name1,class: "input-default", placeholder: "メニュー名を記入"
+        = f.number_field :set1,class: "input-default"
+        = f.text_field :hosoku1,class: "input-default", placeholder: "補足"
+      %div
+        = f.text_field :name2,class: "input-default", placeholder: "メニュー名を記入"
+        = f.number_field :set2,class: "input-default"
+        = f.text_field :hosoku2,class: "input-default", placeholder: "補足"
+      %div
+        = f.text_field :name3,class: "input-default", placeholder: "メニュー名を記入"
+        = f.number_field :set3,class: "input-default"
+        = f.text_field :hosoku3,class: "input-default", placeholder: "補足"
+      %div
+        = f.text_field :name4,class: "input-default", placeholder: "メニュー名を記入"
+        = f.number_field :set4,class: "input-default"
+        = f.text_field :hosoku4,class: "input-default", placeholder: "補足"
+      %div
+        = f.text_field :name5,class: "input-default", placeholder: "メニュー名を記入"
+        = f.number_field :set5,class: "input-default"
+        = f.text_field :hosoku5,class: "input-default", placeholder: "補足"
+      %div
+        = f.text_area :description,placeholder: "詳細を記入"
+        = f.hidden_field :mypage_id, value:@mypage.id
+      %div
+        = f.submit :登録する

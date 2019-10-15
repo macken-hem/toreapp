@@ -12,19 +12,11 @@
 
 ActiveRecord::Schema.define(version: 2019_10_09_074914) do
 
-  create_table "contents", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "mypages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.integer "month", null: false
-    t.integer "day", null: false
-    t.string "day_week", null: false
-    t.string "time", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_contents_on_user_id"
-  end
-
-  create_table "nutritions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "content_id", null: false
+    t.string "day", null: false
+    t.string "image"
+    t.integer "weight", default: 0
     t.text "morning_menu"
     t.integer "morning_p", default: 0
     t.integer "morning_f", default: 0
@@ -57,38 +49,22 @@ ActiveRecord::Schema.define(version: 2019_10_09_074914) do
     t.integer "late_cal", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["content_id"], name: "index_nutritions_on_content_id"
+    t.index ["user_id"], name: "index_mypages_on_user_id"
+  end
+
+  create_table "nutritions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "trainings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "content_id", null: false
-    t.string "part", null: false
-    t.string "name1", null: false
-    t.integer "set1", null: false
-    t.string "sipple1"
-    t.string "name2", null: false
-    t.integer "set2", null: false
-    t.string "sipple2"
-    t.string "name3", null: false
-    t.integer "set3", null: false
-    t.string "sipple3"
-    t.string "name4"
-    t.integer "set4"
-    t.string "sipple4"
-    t.string "name5"
-    t.integer "set5"
-    t.string "sipple5"
-    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["content_id"], name: "index_trainings_on_content_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "nickname", null: false
-    t.integer "age", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -98,7 +74,5 @@ ActiveRecord::Schema.define(version: 2019_10_09_074914) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "contents", "users"
-  add_foreign_key "nutritions", "contents"
-  add_foreign_key "trainings", "contents"
+  add_foreign_key "mypages", "users"
 end

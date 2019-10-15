@@ -11,23 +11,11 @@
           = link_to '新規登録', new_user_registration_path, method: :get
           .log_in
           = link_to 'ログイン', new_user_session_path, method: :get
-          .my_page
-          = link_to 'My page', mypage_index_path
-
 
     .main
-      .main_content
-        .main_content_upper
-          %a.main_content_upper_text
-            aaaaaaaaaaaa
-        .main_content_middle
-          %a.main_content_middle_text
-            bbbbbbbbbbbbbbbbb
-        .main_content_bottom
-          %a.main_content_bottom_text
-            cccccccccccccccc
-
-  
-
-
-
+      = link_to '活動を登録', new_mypage_path
+      .content_list
+      -@user.mypage.each do |mypage|
+        .onelist
+        %span.day
+          = link_to mypage.day, mypage_path(mypage)
