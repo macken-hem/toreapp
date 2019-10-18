@@ -72,3 +72,4 @@ gem 'ancestry'
 gem "haml-rails", "~> 2.0"
 gem "chartkick"
 gem 'chartable'
+gem 'groupdate'

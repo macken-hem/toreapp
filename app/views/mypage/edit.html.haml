@@ -3,18 +3,19 @@
     %h1
     You are what you eat!!
   .form
-    = form_for(@mypage, url:'/mypage', metho: :create) do |f|
+    = form_for(@mypage, method: :patch) do |f|
       .new_upper
-        .new_mypage_day
-          日付を入力
-          = f.date_field :day,class:'day-by-day'
+        .new_mypage_day#edit_day
+          #{@mypage.day}
+          = f.hidden_field :day
         -# .new_mypage_image
         -#   写真があれば
         -#   = f.file_field :image
-        .new_mypage_weight
+        .new_mypage_weight#edit_weight
           体重
-          = f.number_field :weight, min: 0 , max:100,class:'body-weight'
+          #{@mypage.weight}
           kg
+          = f.hidden_field :weight
       .new_middle
         %div
           朝食
@@ -149,6 +150,7 @@
               カロリー　
               = f.number_field :late_cal, min: 0 , max:3000, step:10
               cal
+              =f.hidden_field :user_id
 
 
       .submit

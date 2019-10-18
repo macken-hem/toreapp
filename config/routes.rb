@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # get 'mypage/new'
   # post 'mypage/new' => 'mypage#create'
   resources :main
-  resources :mypage 
+  resources :mypage
+  # only:[:index,:new,:create,:show,:edit,:update]
+ 
   # do
   #   resources :training
   #   resources :nutrition

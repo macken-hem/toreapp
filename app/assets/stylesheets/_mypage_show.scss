@@ -1,0 +1,64 @@
+.mypage_show{
+  width: 100vw;
+  height: 100vh;
+  .mypage_data{
+    display: flex;
+    justify-content: space-between;
+  .mypage_show_day{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .mypage_weight{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    
+  }
+
+  }
+  .mypage_show_lists{
+    width: 100%;
+    margin: 0 auto;
+    
+
+    .mypage_show_list{
+      display: flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+
+      .nut_list{
+        width: 400px;
+        margin-bottom: 20px;
+         
+      }
+    }
+    
+  }
+  .mypage_show_cal{
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    .cal{
+      text-align: right;
+      font-size: 40px;
+
+
+    }
+
+    .show_btn{
+      text-align: right;
+      
+    }
+  }
+
+}
+
+#edit_day{
+  font-size: 40px;
+
+}
+#edit_weight{
+  font-size: 40px;
+
+}

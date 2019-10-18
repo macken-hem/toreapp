@@ -1,0 +1,86 @@
+.new_wrapper{
+  height: 100vh;
+  width: 100vw;
+
+  .new_header{
+    text-align: center;
+    font-size: 50px;
+
+
+  }
+
+.form{
+  .new_mypage_day{
+    font-size: 20px;
+    margin-left: 100px;
+
+
+  .day-by-day{
+    padding: 10px;
+    font-size: 30px;
+  }
+  }
+  .new_mypage_weight{
+    font-size: 20px;
+    margin-right: 100px;
+
+  .body-weight{
+    padding: 10px;
+    font-size: 30px;
+    
+
+  }
+}
+
+  .new_upper{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+  }
+
+  .new_middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+
+    .new_mypage_morning{
+      display: flex;
+      justify-content: space-between;
+      
+      
+      .new_mypage_morning-text{
+
+        .morning-text{
+          width: 200px;
+          border-radius: 5px;
+
+        }
+        
+
+      }
+      .new_mypage_morning-data{
+        padding: 5px;
+
+      }
+
+    }
+    
+
+
+  }
+
+  
+
+  .submit{
+    float: right;
+    margin-top: 60px;
+    margin-right: 100px;
+
+  }
+
+  
+  
+}
+}
