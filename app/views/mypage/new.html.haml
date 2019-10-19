@@ -8,9 +8,6 @@
         .new_mypage_day
           日付を入力
           = f.date_field :day,class:'day-by-day'
-        -# .new_mypage_image
-        -#   写真があれば
-        -#   = f.file_field :image
         .new_mypage_weight
           体重
           = f.number_field :weight, min: 0 , max:100,class:'body-weight'
