@@ -1,6 +1,8 @@
 .mypage_show{
   width: 100vw;
   height: 100vh;
+  
+  
   .mypage_data{
     display: flex;
     justify-content: space-between;
@@ -35,7 +37,8 @@
     
   }
   .mypage_show_cal{
-    
+    display: flex;
+    justify-content: space-between;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
@@ -47,7 +50,8 @@
     }
 
     .show_btn{
-      text-align: right;
+      margin-top: 10px;
+      margin-right: 20px;
       
     }
   }

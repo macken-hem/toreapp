@@ -1,0 +1,53 @@
+.user-new{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#05FBFF, #1D62F0 ) fixed;
+  
+
+
+  .user-new-form{
+    width: 35%;
+    height: 80%;
+    padding-top: 50px;
+    margin: 0 auto;
+    align-content: center;
+
+    .new-user-form-edit{
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      #user_sinki{
+        
+        margin-bottom: 18px;
+      }
+
+      .field{
+        text-align: center;
+      }
+
+      .actions{
+        text-align: center;
+      }
+
+
+
+    }
+
+
+  }
+}
+
+#user_form{
+  width: 50%;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+#user_form2{
+  width: 55%;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

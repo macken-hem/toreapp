@@ -1,37 +1,18 @@
 .wrapper
   .index
-    -# = image_tag 'https://planet-table.com/wp-content/uploads/2019/04/190424_top.jpg',width:'100vw',hight:'100vh'
     .header
+      %h2.title 食事管理アプリ
       .header_content
-        .header_content-left
-          %i.fas.fa-dumbbell.fa-3x
-        .header_content-middle
-          %h3 title
-        .header_content-right
         - if user_signed_in?
           .my_page
-          = link_to 'My page', mypage_index_path,class:'btn-gradient-3d-orange'
-          .i.fas.fa-check
-          = link_to " ログアウト", destroy_user_session_path, method: :delete,class:'btn-gradient-3d-orange'
+          = link_to 'My page', mypage_index_path,class:'btn-gradient-3d-orange', id:'btn-top'
+          .log_out
+          = link_to " ログアウト", destroy_user_session_path, method: :delete,class:'btn-gradient-3d-orange', id:'btn-top'
         - else
           .new_user
-          = link_to '新規登録', new_user_registration_path, method: :get,class:'btn-gradient-3d-orange'
+          = link_to '新規登録', new_user_registration_path, method: :get,class:'btn-gradient-3d-orange', id:'btn-top'
           .log_in
-          = link_to 'ログイン', new_user_session_path, method: :get,class:'btn-gradient-3d-orange'
-          
-
-    .main
-      
-      .main_content
-        .main_content_upper
-          %a.main_content_upper_text
-            aaaaaaaaaaaa
-        .main_content_middle
-          %a.main_content_middle_text
-            bbbbbbbbbbbbbbbbb
-        .main_content_bottom
-          %a.main_content_bottom_text
-            cccccccccccccccc
+          = link_to 'ログイン', new_user_session_path, method: :get,class:'btn-gradient-3d-orange', id:'btn-top'
 
   
 
