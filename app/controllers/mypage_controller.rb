@@ -45,11 +45,11 @@ end
 private
 
 def content_params
-  params.require(:mypage).permit(:day,:image, :morning_menu, :morning_p,:morning_f,:morning_c,:morning_cal,:blunch_menu,:blunch_p,:blunch_f,:blunch_c,:blunch_cal,:lunch_menu,:lunch_p,:lunch_f,:lunch_c,:lunch_cal,:after_noon_menu,:after_noon_p,:after_noon_f,:after_noon_c,:after_noon_cal,:dinner_menu,:dinner_p,:dinner_f,:dinner_c,:dinner_cal,:late_menu,:late_p,:late_f,:late_c,:late_cal,).merge(user_id: current_user.id )
+  params.require(:mypage).permit(:day,:image, :weight, :morning_menu, :morning_p,:morning_f,:morning_c,:morning_cal,:blunch_menu,:blunch_p,:blunch_f,:blunch_c,:blunch_cal,:lunch_menu,:lunch_p,:lunch_f,:lunch_c,:lunch_cal,:after_noon_menu,:after_noon_p,:after_noon_f,:after_noon_c,:after_noon_cal,:dinner_menu,:dinner_p,:dinner_f,:dinner_c,:dinner_cal,:late_menu,:late_p,:late_f,:late_c,:late_cal,).merge(user_id: current_user.id )
 end
 
 def update_params
-  params.require(:mypage).permit(:day,:image, :morning_menu, :morning_p,:morning_f,:morning_c,:morning_cal,:blunch_menu,:blunch_p,:blunch_f,:blunch_c,:blunch_cal,:lunch_menu,:lunch_p,:lunch_f,:lunch_c,:lunch_cal,:after_noon_menu,:after_noon_p,:after_noon_f,:after_noon_c,:after_noon_cal,:dinner_menu,:dinner_p,:dinner_f,:dinner_c,:dinner_cal,:late_menu,:late_p,:late_f,:late_c,:late_cal,).merge(user_id: current_user.id )
+  params.require(:mypage).permit(:day,:image, :weight, :morning_menu, :morning_p,:morning_f,:morning_c,:morning_cal,:blunch_menu,:blunch_p,:blunch_f,:blunch_c,:blunch_cal,:lunch_menu,:lunch_p,:lunch_f,:lunch_c,:lunch_cal,:after_noon_menu,:after_noon_p,:after_noon_f,:after_noon_c,:after_noon_cal,:dinner_menu,:dinner_p,:dinner_f,:dinner_c,:dinner_cal,:late_menu,:late_p,:late_f,:late_c,:late_cal,).merge(user_id: current_user.id )
 end
 
 # def set_params
