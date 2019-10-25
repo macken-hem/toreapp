@@ -7,38 +7,79 @@
   .mypage_show_lists
     .mypage_show_list
       .nut_list
-        %p ・朝食
+        朝食
         = pie_chart @morning ,height: '240px', width: '320px',class:'pie'
         %p
         P#{@mypage.morning_p}g  F#{@mypage.morning_f}g  C#{@mypage.morning_c}g  計#{@mypage.morning_cal}cal 
+        %button#modal-open-btn 詳細
+        #overlay
+          #modalWindow
+            .modal-message-box
+              %div 朝食
+              .menu_list #{@mypage.morning_menu}
+            %button#modal-close-btn 戻る
       .nut_list
-        %p ・間食（午前）
+        間食（午前）
         = pie_chart @blunch,height: '240px', width: '320px'
         %p
         P#{@mypage.blunch_p}g  F#{@mypage.blunch_f}g  C#{@mypage.blunch_c}g  計#{@mypage.blunch_cal}cal 
+        %button#modal-open-btn2 詳細
+        #overlay2
+          #modalWindow
+            .modal-message-box
+              %div 間食（午前）
+              .menu_list #{@mypage.blunch_menu}
+            %button#modal-close-btn2 戻る
       .nut_list
-        %p ・昼食
+        昼食
         = pie_chart @lunch,height: '240px', width: '320px'
         %p
         P#{@mypage.lunch_p}g  F#{@mypage.lunch_f}g  C#{@mypage.lunch_c}g  計#{@mypage.lunch_cal}cal
+        %button#modal-open-btn3 詳細
+        #overlay3
+          #modalWindow
+            .modal-message-box
+              %div 昼食
+              .menu_list #{@mypage.lunch_menu}
+            %button#modal-close-btn3 戻る
       .nut_list
-        %p ・間食（午後）
+        間食（午後）
         = pie_chart @after_noon,height: '240px', width: '320px'
         %p
         P#{@mypage.after_noon_p}g  F#{@mypage.after_noon_f}g  C#{@mypage.after_noon_c}g  計#{@mypage.after_noon_cal}cal
+        %button#modal-open-btn4 詳細
+        #overlay4
+          #modalWindow
+            .modal-message-box
+              %div 間食（午後）
+              .menu_list #{@mypage.after_noon_menu}
+            %button#modal-close-btn4 戻る
       .nut_list
-        %p ・夕食
+        夕食
         = pie_chart @dinner,height: '240px', width: '320px'
         %p
         P#{@mypage.dinner_p}g  F#{@mypage.dinner_f}g  C#{@mypage.dinner_c}g  計#{@mypage.dinner_cal}cal
+        %button#modal-open-btn5 詳細
+        #overlay5
+          #modalWindow
+            .modal-message-box
+              %div 夕食
+              .menu_list #{@mypage.dinner_menu}
+            %button#modal-close-btn5 戻る
       .nut_list
-        %p ・夜食
+        夜食
         = pie_chart @late,height: '240px', width: '320px'
         %p
         P#{@mypage.late_p}g  F#{@mypage.late_f}g  C#{@mypage.late_c}g  計#{@mypage.late_cal}cal
+        %button#modal-open-btn6 詳細
+        #overlay6
+          #modalWindow
+            .modal-message-box
+              %div 夜食
+              .menu_list #{@mypage.late_menu}
+            %button#modal-close-btn6 戻る
   .mypage_show_cal
     %p.cal
       タンパク質#{@mypage.morning_p+@mypage.blunch_p+@mypage.lunch_p+@mypage.after_noon_p+@mypage.dinner_p+@mypage.late_p}g 脂質#{@mypage.morning_f+@mypage.blunch_f+@mypage.lunch_f+@mypage.after_noon_f+@mypage.dinner_f+@mypage.late_f}g 炭水化物#{@mypage.morning_c+@mypage.blunch_c+@mypage.lunch_c+@mypage.after_noon_c+@mypage.dinner_c+@mypage.late_c}g 合計#{@mypage.morning_cal+@mypage.blunch_cal+@mypage.lunch_cal+@mypage.after_noon_cal+@mypage.dinner_cal+@mypage.late_cal}cal
     .show_btn
       = link_to '編集＆追加', edit_mypage_path,class:'btn-gradient-3d-orange'
-      

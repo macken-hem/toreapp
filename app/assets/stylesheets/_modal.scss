@@ -1,0 +1,274 @@
+#overlay {
+  //モーダルウィンドウの背景を設定
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  //透過度をつける
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1;
+  }
+  
+  #modalWindow {
+  // モーダルウィンドウの画面を設定(高さ・幅は調整ください)
+    width: 500px;
+    height: 300px;
+    position: absolute;
+  //トップからの場所を指定（topをいじれば高さが調整できます）
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 2;
+  //flexboxで子要素のボタンとメッセージボックスの要素を配置する
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    .modal-message-box {
+      width: 100%;
+  //下記heightの60pxはボタンの高さで、それを画面の大きさから引いています。
+      height: calc(100% - 60px);
+      text-align: center;
+  //flexboxで文字の配置を決める（縦方向、中央揃え）
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .menu_list{
+        margin: 0 auto;
+        text-align: left;
+        width: 50%;
+        height: 50%;
+      }
+    }
+  
+    #modal-close-btn {
+      width: 100%;
+      height: 60px;
+    }
+    
+  }
+  
+  
+
+
+/////////////////////////////////////////////////////
+
+#overlay2 {
+//モーダルウィンドウの背景を設定
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+//透過度をつける
+background: rgba(0, 0, 0, 0.3);
+display: none;
+z-index: 1;
+}
+
+#modal-close-btn2 {
+width: 100%;
+height: 60px;
+}
+    
+///////////////////////////////////////////////
+
+#overlay3 {
+//モーダルウィンドウの背景を設定
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+//透過度をつける
+background: rgba(0, 0, 0, 0.3);
+display: none;
+z-index: 1;
+}
+
+#modal-close-btn3 {
+width: 100%;
+height: 60px;
+}
+
+///////////////////////////////////////////////////
+
+#overlay4 {
+//モーダルウィンドウの背景を設定
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+//透過度をつける
+background: rgba(0, 0, 0, 0.3);
+display: none;
+z-index: 1;
+}
+
+#modal-close-btn4 {
+width: 100%;
+height: 60px;
+}
+
+///////////////////////////////////////////
+
+
+#overlay5 {
+//モーダルウィンドウの背景を設定
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+//透過度をつける
+background: rgba(0, 0, 0, 0.3);
+display: none;
+z-index: 1;
+}
+
+#modal-close-btn5 {
+width: 100%;
+height: 60px;
+}
+
+/////////////////////////////////////////////////
+
+
+#overlay6 {
+//モーダルウィンドウの背景を設定
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+//透過度をつける
+background: rgba(0, 0, 0, 0.3);
+display: none;
+z-index: 1;
+}
+
+#modal-close-btn6 {
+width: 100%;
+height: 60px;
+}
+
+#modal-open-btn{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
+
+
+
+#modal-open-btn2{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn2:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
+
+#modal-open-btn3{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn3:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
+
+#modal-open-btn4{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn4:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
+
+#modal-open-btn5{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn5:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
+
+#modal-open-btn6{
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #e47e3b;
+  font-size: 10px;
+  color: #e47e3b;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+#modal-open-btn6:hover {
+  background-color: #e47e3b;
+  border-color: #e47e3b;
+  color: #FFF;
+}
