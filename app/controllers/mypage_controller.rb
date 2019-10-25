@@ -40,23 +40,6 @@ def update
   redirect_to controller: :mypage, action: :index
 end
 
-def show_morning
-end
-
-def show_blunch
-end
-
-def show_lunch
-end
-
-def show_after
-end
-
-def show_diner
-end
-
-def show_late
-end
 
 
 private
