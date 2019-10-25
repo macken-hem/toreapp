@@ -16,7 +16,7 @@
           #modalWindow
             .modal-message-box
               %div 朝食
-              .menu_list #{@mypage.morning_menu}
+              .menu_list= simple_format(@mypage.morning_menu)
             %button#modal-close-btn 戻る
       .nut_list
         間食（午前）
@@ -28,7 +28,7 @@
           #modalWindow
             .modal-message-box
               %div 間食（午前）
-              .menu_list #{@mypage.blunch_menu}
+              .menu_list= simple_format(@mypage.blunch_menu)
             %button#modal-close-btn2 戻る
       .nut_list
         昼食
@@ -40,7 +40,7 @@
           #modalWindow
             .modal-message-box
               %div 昼食
-              .menu_list #{@mypage.lunch_menu}
+              .menu_list= simple_format(@mypage.lunch_menu)
             %button#modal-close-btn3 戻る
       .nut_list
         間食（午後）
@@ -52,7 +52,7 @@
           #modalWindow
             .modal-message-box
               %div 間食（午後）
-              .menu_list #{@mypage.after_noon_menu}
+              .menu_list= simple_format(@mypage.after_noon_menu)
             %button#modal-close-btn4 戻る
       .nut_list
         夕食
@@ -64,7 +64,7 @@
           #modalWindow
             .modal-message-box
               %div 夕食
-              .menu_list #{@mypage.dinner_menu}
+              .menu_list= simple_format(@mypage.dinner_menu)
             %button#modal-close-btn5 戻る
       .nut_list
         夜食
@@ -76,7 +76,7 @@
           #modalWindow
             .modal-message-box
               %div 夜食
-              .menu_list #{@mypage.late_menu}
+              .menu_list= simple_format(@mypage.late_menu)
             %button#modal-close-btn6 戻る
   .mypage_show_cal
     %p.cal
