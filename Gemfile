@@ -72,6 +72,7 @@ gem "haml-rails", "~> 2.0"
 gem "chartkick"
 gem 'chartable'
 gem 'groupdate'
+gem 'kaminari'
 
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', '~> 0.19.0', group: :production
