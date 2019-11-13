@@ -4,14 +4,10 @@ class MypageController < ApplicationController
 def index
   @mypage = Mypage.all
   @user = current_user
-  
-  # @user_data = @mypage
-  
 end
 
 def new
   @mypage = Mypage.new
-  # @content.build_training
 end
 
 def create
