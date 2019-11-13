@@ -16,8 +16,11 @@ end
 
 def create
   @mypage = Mypage.new(content_params)
-  @mypage.save
-  redirect_to controller: :mypage, action: :index
+  if @mypage.save
+    redirect_to controller: :mypage, action: :index
+  else
+    redirect_to controller: :mypage, action: :new
+  end
 end
 
 def show
