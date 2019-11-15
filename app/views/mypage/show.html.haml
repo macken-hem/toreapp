@@ -81,5 +81,8 @@
   .mypage_show_cal
     %p.cal
       タンパク質#{@mypage.morning_p+@mypage.blunch_p+@mypage.lunch_p+@mypage.after_noon_p+@mypage.dinner_p+@mypage.late_p}g 脂質#{@mypage.morning_f+@mypage.blunch_f+@mypage.lunch_f+@mypage.after_noon_f+@mypage.dinner_f+@mypage.late_f}g 炭水化物#{@mypage.morning_c+@mypage.blunch_c+@mypage.lunch_c+@mypage.after_noon_c+@mypage.dinner_c+@mypage.late_c}g 合計#{@mypage.morning_cal+@mypage.blunch_cal+@mypage.lunch_cal+@mypage.after_noon_cal+@mypage.dinner_cal+@mypage.late_cal}cal
-    .show_btn
-      = link_to '編集＆追加', edit_mypage_path,class:'btn-gradient-3d-orange'
+    .buttons
+      .show_btn
+        = link_to '編集＆追加', edit_mypage_path,class:'btn-gradient-3d-orange'
+      .delete-btn
+        = link_to "削除する", mypage_path(@mypage), method: :delete, id:'delete'

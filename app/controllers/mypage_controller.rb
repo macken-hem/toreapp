@@ -39,6 +39,12 @@ def update
   redirect_to controller: :mypage, action: :index
 end
 
+def destroy
+  @mypage = Mypage.find(params[:id])
+  @mypage.destroy
+  redirect_to controller: :mypage, action: :index
+end
+
 
 
 private
