@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_10_09_073100) do
     t.bigint "user_id", null: false
     t.string "day", null: false
     t.string "image"
-    t.integer "weight", default: 0
+    t.integer "weight", default: 0, null: false
     t.text "morning_menu"
     t.integer "morning_p", default: 0
     t.integer "morning_f", default: 0
