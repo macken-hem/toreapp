@@ -5,7 +5,7 @@ class CreateMypages < ActiveRecord::Migration[5.2]
       t.string :day,               null: false
 
       t.string :image
-      t.integer :weight,             default: 0
+      t.integer :weight,              null: false
 
       t.text :morning_menu
       t.integer :morning_p,             default: 0
