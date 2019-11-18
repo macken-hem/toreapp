@@ -2,7 +2,7 @@ class MypageController < ApplicationController
   # before_action :set_params, only:[:show, :edit, :update]
 
 def index
-  @mypage = Mypage.all
+  @mypage = Mypage.all.order("day DESC")
   @user = current_user
 end
 
