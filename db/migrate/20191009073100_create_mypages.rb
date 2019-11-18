@@ -2,7 +2,7 @@ class CreateMypages < ActiveRecord::Migration[5.2]
   def change
     create_table :mypages do |t|
       t.references :user,           null: false, foreign_key: true
-      t.string :day,               null: false
+      t.date :day,               null: false
 
       t.string :image
       t.integer :weight,              null: false
