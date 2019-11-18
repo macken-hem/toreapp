@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_10_09_073100) do
 
   create_table "mypages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
-    t.string "day", null: false
+    t.date "day", null: false
     t.string "image"
     t.integer "weight", null: false
     t.text "morning_menu"
