@@ -1,82 +1,53 @@
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn");
-    modal_open.onclick = function () {
-      $('#overlay').fadeIn();
-      document.getElementById('modal-close-btn').onclick = function () {
-        $('#overlay').fadeOut();
-      };
-    };
-  },
-  false
-);
+$(function(){
+  $("#modal-open-btn").on("click",function(){
+    $('#overlay').fadeIn();
+  });
+  $("#modal-close-btn").on("click",function(){
+    $('#overlay').fadeOut();
+  });
+});
 
+$(function(){
+  $("#modal-open-btn2").on("click",function(){
+    $('#overlay2').fadeIn();
+  });
+  $("#modal-close-btn2").on("click",function(){
+    $('#overlay2').fadeOut();
+  });
+});
 
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn2");
-    modal_open.onclick = function () {
-      $('#overlay2').fadeIn();
-      document.getElementById('modal-close-btn2').onclick = function () {
-        $('#overlay2').fadeOut();
-      };
-    };
-  },
-  false
-);
+$(function(){
+  $("#modal-open-btn3").on("click",function(){
+    $('#overlay3').fadeIn();
+  });
+  $("#modal-close-btn3").on("click",function(){
+    $('#overlay3').fadeOut();
+  });
+});
 
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn3");
-    modal_open.onclick = function () {
-      $('#overlay3').fadeIn();
-      document.getElementById('modal-close-btn3').onclick = function () {
-        $('#overlay3').fadeOut();
-      };
-    };
-  },
-  false
-);
+$(function(){
+  $("#modal-open-btn4").on("click",function(){
+    $('#overlay4').fadeIn();
+  });
+  $("#modal-close-btn4").on("click",function(){
+    $('#overlay4').fadeOut();
+  });
+});
 
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn4");
-    modal_open.onclick = function () {
-      $('#overlay4').fadeIn();
-      document.getElementById('modal-close-btn4').onclick = function () {
-        $('#overlay4').fadeOut();
-      };
-      
-    };
-  },
-  false
-);
+$(function(){
+  $("#modal-open-btn5").on("click",function(){
+    $('#overlay5').fadeIn();
+  });
+  $("#modal-close-btn5").on("click",function(){
+    $('#overlay5').fadeOut();
+  });
+});
 
-
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn5");
-    modal_open.onclick = function () {
-      $('#overlay5').fadeIn();
-      document.getElementById('modal-close-btn5').onclick = function () {
-        $('#overlay5').fadeOut();
-      };
-      
-    };
-  },
-  false
-);
-
-document.addEventListener(
-  "DOMContentLoaded", e => {
-    let modal_open = document.getElementById("modal-open-btn6");
-    modal_open.onclick = function () {
-      $('#overlay6').fadeIn();
-      document.getElementById('modal-close-btn6').onclick = function () {
-        $('#overlay6').fadeOut();
-      };
-      
-    };
-  },
-  false
-);
+$(function(){
+  $("#modal-open-btn6").on("click",function(){
+    $('#overlay6').fadeIn();
+  });
+  $("#modal-close-btn6").on("click",function(){
+    $('#overlay6').fadeOut();
+  });
+});
