@@ -22,28 +22,28 @@
   flex-flow: row wrap;
 
 }
-.card3 {
+.card {
   width: 400px;
   margin: 20px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 3px 6px #ccc;
 }
-.box3 {
+.box {
   display: flex;
 }
-.image3 {
+.image {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 5px 0 0 5px;
 }
-.title3 {
+.listDay {
   font-size: 150%;
   margin: 10px;
   color: #444;
 }
-.content3 {
+.content {
   padding-left: 10px;
   color: #666;
 }

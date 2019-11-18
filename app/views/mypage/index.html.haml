@@ -23,21 +23,11 @@
       
       .lists
         -@user.mypage.each do |mypage|
-          .card3
-            .box3
-              = image_tag '/dnbl.jpg', class: 'image3'
+          .card
+            .box
+              = image_tag '/dnbl.jpg', class: 'image'
               %div
-                %p.title3
-                  = link_to mypage.day, mypage_path(mypage),class:'title3'
-                %p.content3
-                  good luck! #{@user.nickname}
-      
-        
-        
-        
-        
-        -# = line_chart [mypage.day,mypage.weight] 
-        -# = line_chart @user_data.group("date(day)").count
-        -# = line_chart mypage.weight.group_by_day(:day).count
-      
-        
+                %p.listDay
+                  = link_to mypage.day, mypage_path(mypage),class:'listDay'
+                %p.content
+                  good luck! #{@user.nickname}        
