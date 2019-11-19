@@ -22,12 +22,15 @@
           = link_to '今日の食事を記録する', new_mypage_path, class:'btn-gradient-3d-orange',id:'myp-btn'
       
       .lists
-        -@user.mypage.each do |mypage|
-          .card
-            .box
-              = image_tag '/dnbl.jpg', class: 'image'
-              %div
-                %p.listDay
-                  = link_to mypage.day, mypage_path(mypage),class:'listDay'
-                %p.content
-                  good luck! #{@user.nickname}        
+        -@mypage.each do |mypage|
+          - if current_user.id == mypage.user.id
+            .card
+              .box
+                = image_tag '/dnbl.jpg', class: 'image'
+                %div
+                  %p.listDay
+                    = link_to mypage.day, mypage_path(mypage),class:'listDay'
+                  %p.content
+                    good luck! #{@user.nickname}
+          - else
+                 
