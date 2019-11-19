@@ -4,6 +4,9 @@ class MypageController < ApplicationController
 def index
   @mypage = Mypage.all.order("day DESC")
   @user = current_user
+  # current_userではなく全ユーザーを取り出して一覧に並べていいねできる
+  # という仕様にした方が面白い？ただそうなれば画像を投稿する機能もつけた方が
+  # が良いはず。イメージタグで固定のところを1枚目表示にして他をモーダルの横につけるとか？
 end
 
 def new
