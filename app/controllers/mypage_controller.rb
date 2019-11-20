@@ -1,5 +1,4 @@
 class MypageController < ApplicationController
-  # before_action :set_params, only:[:show, :edit, :update]
 
 def index
   @mypage = Mypage.all.order("day DESC")
@@ -30,6 +29,11 @@ def show
   @after_noon = {'タンパク質' => @mypage.after_noon_p,'脂質'=> @mypage.after_noon_f,'炭水化物' => @mypage.after_noon_c}
   @dinner = {'タンパク質' => @mypage.dinner_p,'脂質'=> @mypage.dinner_f,'炭水化物' => @mypage.dinner_c}
   @late = {'タンパク質' => @mypage.late_p,'脂質'=> @mypage.late_f,'炭水化物' => @mypage.late_c}
+  if user_signed_in?
+    unless @mypage.user.id == current_user.id 
+    redirect_to controller: :main, action: :index
+    end
+  end
 end
 
 def edit
