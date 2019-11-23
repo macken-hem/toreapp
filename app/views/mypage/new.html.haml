@@ -21,19 +21,19 @@
             .new_mypage_morning-data
               %div
               タンパク質
-              = f.number_field :morning_p, min: 0 , max:100,id: 'morning_p'
+              = f.text_field :morning_p, min: 0 , max:100,id: 'morning_p'
               g
               %div
               脂質　　　
-              = f.number_field :morning_f, min: 0 , max:100
+              = f.text_field :morning_f, min: 0 , max:100
               g
               %div
               炭水化物　
-              = f.number_field :morning_c, min: 0 , max:300
+              = f.text_field :morning_c, min: 0 , max:300
               g
               %div
               カロリー　
-              = f.number_field :morning_cal, min: 0 , max:3000, id: 'morning_cal'
+              = f.text_field :morning_cal, min: 0 , max:3000,id: 'morning_cal'
               cal
         %div
           間食（午前）
